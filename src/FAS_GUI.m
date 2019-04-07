@@ -22,7 +22,7 @@ function varargout = FAS_GUI(varargin)
 
 % Edit the above text to modify the response to help FAS_GUI
 
-% Last Modified by GUIDE v2.5 27-May-2018 15:30:56
+% Last Modified by GUIDE v2.5 04-Apr-2019 21:12:54
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -590,3 +590,17 @@ function pushbutton7_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 a = sprintf('Steps to process file:\n1 - Click on "Load File" to choose a file to process;\n2 - If you want, click on "Play File" to play the original file;\n3 - Choose a coeficient value by dragging the slider or inputting directly on the corresponding box. Do not forget to check the box if you want to modulate that descriptor;\n4 - Press the red "Process File" button to begin processing;\n5 - Choose to play or save the 3 configurations of the modulated signal available, Deterministic only, Stochastic only or both;\n6 - To modulate again, go back to step 4.');
 mensagem= msgbox(a,'TUTORIAL','help');
+
+
+% --- Executes during object creation, after setting all properties.
+function value_Mehbh_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to value_Mehbh (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+
+% --- Executes during object deletion, before destroying properties.
+function value_Mehbh_DeleteFcn(hObject, eventdata, handles)
+% hObject    handle to value_Mehbh (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
